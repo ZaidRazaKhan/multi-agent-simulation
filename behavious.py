@@ -3,15 +3,17 @@ from pade.acl.messages import ACLMessage
 from pade.behaviours.protocols import FipaRequestProtocol
 from pade.misc.utility import display_message, start_loop
 from pade.behaviours.protocols import TimedBehaviour
+
+
 # n = random.randint(0,22)
 
 class PassingBehaviour(FipaRequestProtocol):
     def __init__(self, agent):
         super(PassingBehaviour, self).__init__(agent=agent,
-                                          message=None,
-                                          is_initiator=False)
+                                               message=None,
+                                               is_initiator=False)
         print('Passing behaviour')
-    
+
     def handle_request(self, message):
         super(PassingBehaviour, self).handle_request(message)
         msg = message.create_reply()
@@ -20,17 +22,17 @@ class PassingBehaviour(FipaRequestProtocol):
         self.agent.send(msg)
 
 
-
 class AttackingBehaviour(FipaRequestProtocol):
     def __init__(self, agent):
         super(AttackingBehaviour, self).__init__(agent=agent, message=None, is_initiator=False)
         print('Attacking behaviour')
 
+
 class BallReceivingBehaviour(FipaRequestProtocol):
     def __init__(self, agent):
         super(BallReceivingBehaviour, self).__init__(agent=agent, message=None, is_initiator=True)
         print('Ball Receiving behaviour')
-    
+
     def handle_inform(self, message):
         display_message(self.agent.aid.localname, message.content)
 
@@ -40,7 +42,7 @@ class TemporalBehaviour(TimedBehaviour):
         super(TemporalBehaviour, self).__init__(agent, time)
         self.message = message
         print('Timed Behaviour')
-    
+
     def on_time(self):
         super(TemporalBehaviour, self).on_time()
         self.agent.send(self.message)
@@ -48,6 +50,7 @@ class TemporalBehaviour(TimedBehaviour):
 
 class ComportTemporal(TimedBehaviour):
     """Timed Behaviour of the Clock agent"""
+
     def __init__(self, agent, time, message):
         super(ComportTemporal, self).__init__(agent, time)
         self.message = message
