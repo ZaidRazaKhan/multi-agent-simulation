@@ -1,4 +1,4 @@
-<br>
+<hr><br>
 **Real-Time Autonomous System**
 
 Pravendra Singh Khichi B16EE026
@@ -49,7 +49,7 @@ All the agents have different behavior which includes passing the ball, attackin
 <p id="gdcalert2" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline drawings not supported directly from Docs. You may want to copy the inline drawing to a standalone drawing and export by reference. See <a href="https://github.com/evbacher/gd2md-html/wiki/Google-Drawings-by-reference">Google Drawings by reference</a> for details. The img URL below is a placeholder. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert3">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
-![drawing](https://docs.google.com/drawings/d/12345/export/png)
+![drawing](images/1.png)
 
 <h1>PLANNING SCHEME</h1>
 
@@ -98,19 +98,10 @@ Bidding behavior: To call out for the ball to team members bidding is necessary.
 
 The FIPA-Request protocol is used when you need to make a request for something to other agents.
 
-
-
-<p id="gdcalert3" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image2.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert4">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
 ![alt_text](images/image2.png "image_tooltip")
 
 
 The FIPA-Contract-Net protocol is used for situations where it is necessary to carry out some type of negotiation between agents. In the same way as in the FIPA-Request protocol, in the FIPA-ContractNet protocol, there are two types of agents, an agent that initiates the negotiation, or a beginning agent, making requests for proposals and one or more agents that participate in the negotiation, or participating agents, that respond to the initiating agent's requests for proposals.
-
-
-
-<p id="gdcalert4" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image3.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert5">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
 ![alt_text](images/image3.png "image_tooltip")
@@ -118,9 +109,6 @@ The FIPA-Contract-Net protocol is used for situations where it is necessary to c
 
 The FIPA-Subscribe protocol implements the behavior of editor-subscriber, which consists of the presence of an editor agent who can accept the association of other interested agents, subscribing agents, in some type of information that this agent has, subscribing to the information and receiving message whenever this information is made available by the publishing agent.
 
-
-
-<p id="gdcalert5" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image4.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert6">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
 ![alt_text](images/image4.png "image_tooltip")
