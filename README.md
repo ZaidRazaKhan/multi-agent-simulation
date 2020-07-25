@@ -45,10 +45,6 @@ This design is a simple CLI based design where the soccer is simulated with comm
 All the agents have different behavior which includes passing the ball, attacking the goal post, and defending the goal. For this the agents use different protocols. For example, goalkeeper uses request-response behavior to pass the ball to winger. Then winger uses bidding protocols for passing the ball with possibility that the ball can be intercepted by the defender. If the defender gets the ball then the game will restart. Otherwise, the ball will be passed to attacker. If attacker scores a goal then it notifies every other agent by using the subscribing protocol. If it fails then again the game will start
 
  
-
-<p id="gdcalert2" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline drawings not supported directly from Docs. You may want to copy the inline drawing to a standalone drawing and export by reference. See <a href="https://github.com/evbacher/gd2md-html/wiki/Google-Drawings-by-reference">Google Drawings by reference</a> for details. The img URL below is a placeholder. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert3">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
 ![drawing](images/1.png)
 
 <h1>PLANNING SCHEME</h1>
@@ -59,7 +55,7 @@ All the agents have different behavior which includes passing the ball, attackin
 
 For the simulation purpose, we are using PADE which is a framework for python for development, execution, and management of MAS(multi-agent systems) environments of the distributed computation. It uses the most popular FIPA standard protocols, like ContractNet, Request, and Subscribe.
 
-	The core package consists of basically an agent (has the necessary functionalities for defining an agent and to enable AMS registration, connection verification, and message exchange), an AMS system (for the purpose of communicating), and behavior. 
+The core package consists of basically an agent (has the necessary functionalities for defining an agent and to enable AMS registration, connection verification, and message exchange), an AMS system (for the purpose of communicating), and behavior. 
 
 <h2>Agent Architecture</h2>
 
