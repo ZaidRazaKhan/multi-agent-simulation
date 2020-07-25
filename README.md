@@ -114,15 +114,19 @@ The FIPA-Subscribe protocol implements the behavior of editor-subscriber, which 
 Simulations results obtained
 
  
-![drawing](images/ui.png)
+![agent running](images/simulationUi.png)
+ 
+![agent server](images/simulationUi1.png)
+ 
+![agent server](images/simulationUi2.png)
 
-![alt_text](images/simulation1.png "image_tooltip")
+![simulation running results](images/simulation1.png "image_tooltip")
 
-![alt_text](images/simulation2.png "image_tooltip")
+![simulation running results](images/simulation2.png "image_tooltip")
 
-![alt_text](images/simulation3.png "image_tooltip")
+![simulation running results](images/simulation3.png "image_tooltip")
 
-![alt_text](images/simulation4.png "image_tooltip")
+![simulation running results](images/simulation4.png "image_tooltip")
 
 <h1>HOW TO RUN THE CODE:</h1>
 
