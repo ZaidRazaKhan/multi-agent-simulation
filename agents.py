@@ -37,7 +37,6 @@ class BallReceivingWinger(Agent):
         print('Winger')
         message = ACLMessage(ACLMessage.SUBSCRIBE)
         message.set_protocol(ACLMessage.FIPA_SUBSCRIBE_PROTOCOL)
-        # message.add_receiver(AID(BallReceivingWinger))
         message.set_content("Ball!!")
         self.call_later(8.0, self.launch_subscriber_protocol, message)
 
@@ -56,7 +55,7 @@ class Crowd(Agent):
     
     def __init__(self, aid, message):
         super(Crowd, self).__init__(aid)
-
+        print('Crowd')
         self.call_later(8.0, self.launch_subscriber_protocol, message)
 
     def launch_subscriber_protocol(self, message):
@@ -86,7 +85,7 @@ class Defender(Agent):
 class Striker(Agent):
     def __init__(self, aid):
         super(Striker, self).__init__(aid)
-
+        print('Striker')
         self.protocol = PublisherProtocol(self)
         self.timed = Time(self, self.protocol.notify)
 
@@ -105,10 +104,45 @@ class Scorer(Agent):
         super(Scorer, self).__init__(aid=aid, debug=False)
         print('Scorer')
 
-# class AgenteHelloWorld(Agent):
-#     def __init__(self, aid):
-#         super(AgenteHelloWorld, self).__init__(aid=aid, debug=False)
 
-#         comp_temp = ComportTemporal(self, 1.0)
+class PassingWinger(Agent):
+    
+    def __init__(self, aid, participants):
+        super(PassingWinger, self).__init__(aid=aid, debug=False)
 
-#         self.behaviours.append(comp_temp)
+        message = ACLMessage(ACLMessage.CFP)
+        message.set_protocol(ACLMessage.FIPA_CONTRACT_NET_PROTOCOL)
+        message.set_content('60.0')
+
+        for participant in participants:
+            message.add_receiver(AID(name=participant))
+
+        self.call_later(8.0, self.launch_contract_net_protocol, message)
+
+    def launch_contract_net_protocol(self, message):
+        comp = CompContNet1(self, message)
+        self.behaviours.append(comp)
+        comp.on_start()
+
+
+class Defender(Agent):
+
+    def __init__(self, aid, pot_disp):
+        super(Defender, self).__init__(aid=aid, debug=False)
+
+        self.pot_disp = pot_disp
+
+        comp = CompContNet2(self)
+
+        self.behaviours.append(comp)
+
+class Attacker(Agent):
+    
+    def __init__(self, aid, pot_disp):
+        super(Attacker, self).__init__(aid=aid, debug=False)
+
+        self.pot_disp = pot_disp
+
+        comp = CompContNet2(self)
+
+        self.behaviours.append(comp)
