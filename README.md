@@ -1,35 +1,5 @@
 <!-- Copy and paste the converted output. -->
 
-<!-----
-NEW: Check the "Suppress top comment" option to remove this info from the output.
-
-Conversion time: 1.561 seconds.
-
-
-Using this Markdown file:
-
-1. Paste this output into your source file.
-2. See the notes and action items below regarding this conversion run.
-3. Check the rendered output (headings, lists, code blocks, tables) for proper
-   formatting and use a linkchecker before you publish this page.
-
-Conversion notes:
-
-* Docs to Markdown version 1.0β29
-* Sat Jul 25 2020 09:47:37 GMT-0700 (PDT)
-* Source doc: Project proposal
-
-WARNING:
-Inline drawings not supported: look for ">>>>>  gd2md-html alert:  inline drawings..." in output.
-
-* This document has images: check for >>>>>  gd2md-html alert:  inline image link in generated source and store images to your server. NOTE: Images in exported zip file from Google Docs may not appear in  the same order as they do in your doc. Please check the images!
-
-
-WARNING:
-You have 7 H1 headings. You may want to use the "H1 -> H2" option to demote all headings by one level.
-
------>
-
 
 <p style="color: red; font-weight: bold">>>>>>  gd2md-html alert:  ERRORs: 0; WARNINGs: 2; ALERTS: 5.</p>
 <ul style="color: red; font-weight: bold"><li>See top comment block for details on ERRORs and WARNINGs. <li>In the converted Markdown or HTML, search for inline alerts that start with >>>>>  gd2md-html alert:  for specific instances that need correction.</ul>
@@ -57,19 +27,18 @@ Pravendra Singh Khichi B16EE026
 
 Zaid Khan B16CS040
 
-
-# Soccer Multi-Agent Simulation
-
-
-## **24<sup>th</sup> July 2020**
+<h1>Soccer Multi-Agent Simulation</h1>
 
 
-# OVERVIEW
+<p>**24<sup>th</sup> July 2020**
+
+<h1>OVERVIEW</h1>
+
 
 A soccer game is a specific but very attractive real-time multi-agent environment. In a game, we have two competing teams. Each team has a team-wide common goal, namely to win the game. The goals of the two teams are incompatible. The opponent team can be seen as a dynamic and obstructive environment, which might disturb the achievement of the common team goal. To fulfill the common goal, each team needs to score, which can be seen as a subgoal. To achieve this subgoal, each team member is required to behave quickly, flexibly, and cooperatively; by taking local and global situations into account. The team might have some sorts of global (team-wide) strategies to fulfill the common goal, and both local and global tactics to achieve subgoals.
 
+<h1>GOALS</h1>
 
-# GOALS
 
 
 
@@ -78,13 +47,13 @@ A soccer game is a specific but very attractive real-time multi-agent environmen
 3. Behaviors of each model
 4. Simulation in dynamic action 
 
+<h1>SPECIFICATIONS OF SOCCER GAME</h1>
 
-# SPECIFICATIONS OF SOCCER GAME
 
 For this project, we will be using the python agent development environment(PADE). It used object-oriented programming concepts with communication through message passing. It also uses a flask to get information about the agents running on the server on port 5000.
 
+<h1>DESIGN</h1>
 
-# DESIGN
 
 This design is a simple CLI based design where the soccer is simulated with communication between agents through FIPA protocol. We have different agents to deliver different behaviors in the environment. The following are the agents in the environment:
 
@@ -104,18 +73,18 @@ All the agents have different behavior which includes passing the ball, attackin
 
 ![drawing](https://docs.google.com/drawings/d/12345/export/png)
 
+<h1>PLANNING SCHEME</h1>
 
-# PLANNING SCHEME
 
+<h2>World/Environment</h2>
 
-## World/Environment
 
 For the simulation purpose, we are using PADE which is a framework for python for development, execution, and management of MAS(multi-agent systems) environments of the distributed computation. It uses the most popular FIPA standard protocols, like ContractNet, Request, and Subscribe.
 
 	The core package consists of basically an agent (has the necessary functionalities for defining an agent and to enable AMS registration, connection verification, and message exchange), an AMS system (for the purpose of communicating), and behavior. 
 
+<h2>Agent Architecture</h2>
 
-## Agent Architecture
 
 The Agent Model is composed of a connection mechanism to the platform, a message dispatcher, and a set of different behaviors that the dispatcher gives the messages to. 
 
@@ -131,8 +100,8 @@ Winger: The responsibility of winger is to pass the ball to the attacker, where 
 
 Attacker: The attacker agent is responsible for attacking with a certain probability. If it scores then everyone will celebrate. And if it fails then the match will start again from the goalkeeper agent.
 
+<h2>Behaviors</h2>
 
-## Behaviors
 
 An agent can run several behaviors simultaneously. A behavior is a task that an agent can execute using repeating patterns. PADE provides some predefined behavior types: Timed behavior, bidding behavior, publisher-subscriber behavior. Those behavior types help to implement the different tasks that an agent can perform. 
 
@@ -146,8 +115,8 @@ Publisher-Subscriber behavior: To notify others that the ball is received, and p
 
 Bidding behavior: To call out for the ball to team members bidding is necessary. Through which defender and attacker will get the ball. 
 
+<h2>Control Collaboration Protocol: FIPA</h2>
 
-## Control Collaboration Protocol: FIPA
 
 The FIPA-Request protocol is used when you need to make a request for something to other agents.
 
@@ -179,11 +148,11 @@ The FIPA-Subscribe protocol implements the behavior of editor-subscriber, which 
 ![alt_text](images/image4.png "image_tooltip")
 
 
+<h1>SIMULATION</h1>
 
-# SIMULATION
 
+<h1>HOW TO RUN THE CODE:</h1>
 
-# HOW TO RUN THE CODE:
 
 Install the dependencies by pip3 install -r requirements.txt
 
