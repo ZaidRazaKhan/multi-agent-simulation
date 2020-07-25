@@ -1,11 +1,11 @@
-<hr><br>
-<h1>Real-Time Autonomous System</h1>
 
-Pravendra Singh Khichi B16EE026
+<h3>Collaborators:</h3>
+<ul><li>Pravendra Singh Khichi</li>
 
-Zaid Khan B16CS040
+<li>Zaid Khan</li>
+</ul>
 
-<h1>Soccer Multi-Agent Simulation</h1>
+<h1 align="center">Soccer Multi-Agent Simulation</h1>
 
 
 <p>**24<sup>th</sup> July 2020**
