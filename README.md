@@ -112,6 +112,7 @@ The FIPA-Subscribe protocol implements the behavior of editor-subscriber, which 
 
 <h1>SIMULATION</h1>
 Simulations results obtained
+
 ![alt_text](images/simulation1.png "image_tooltip")
 
 ![alt_text](images/simulation2.png "image_tooltip")
