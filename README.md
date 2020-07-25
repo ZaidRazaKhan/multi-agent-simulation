@@ -113,7 +113,9 @@ The FIPA-Subscribe protocol implements the behavior of editor-subscriber, which 
 <h1>SIMULATION</h1>
 Simulations results obtained
 
- 
+![agent running](images/simulationMessageDiagram.png)
+
+
 ![agent running](images/simulationUi.png)
  
 ![agent server](images/simulationUi1.png)
