@@ -113,11 +113,13 @@ The FIPA-Subscribe protocol implements the behavior of editor-subscriber, which 
 <h1>SIMULATION</h1>
 Simulations results obtained
 
-![agent running](images/simulationMessageDiagram.png)
+
 
 
 ![agent running](images/simulationUi.png)
- 
+
+![agent running](images/simulationMessageDiagram.png)
+
 ![agent server](images/simulationUi1.png)
  
 ![agent server](images/simulationUi2.png)
@@ -131,8 +133,15 @@ Simulations results obtained
 ![simulation running results](images/simulation4.png "image_tooltip")
 
 <h1>HOW TO RUN THE CODE:</h1>
-
-
-Install the dependencies by pip3 install -r requirements.txt
-
-Then for running the code run: pade start_runtime --port 20000 driver.py
+ ```bash
+git clone https://github.com/ZaidRazaKhan/multi-agent-simulation.git
+cd multi-agent-simulation
+```
+For installing dependencies:
+```bash
+pip3 install -r requirements.txt
+```
+For running the code:
+```bash
+pade start-runtime --port 20000 driver.py
+```
