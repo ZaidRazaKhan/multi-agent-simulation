@@ -133,15 +133,9 @@ Simulations results obtained
 ![simulation running results](images/simulation4.png "image_tooltip")
 
 <h1>HOW TO RUN THE CODE:</h1>
- ```bash
-git clone https://github.com/ZaidRazaKhan/multi-agent-simulation.git
-cd multi-agent-simulation
-```
+> git clone https://github.com/ZaidRazaKhan/multi-agent-simulation.git
+> cd multi-agent-simulation
 For installing dependencies:
-```bash
-pip3 install -r requirements.txt
-```
+> pip3 install -r requirements.txt
 For running the code:
-```bash
-pade start-runtime --port 20000 driver.py
-```
+> pade start-runtime --port 20000 driver.py
