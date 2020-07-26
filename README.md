@@ -134,8 +134,13 @@ Simulations results obtained
 
 <h1>HOW TO RUN THE CODE:</h1>
 > git clone https://github.com/ZaidRazaKhan/multi-agent-simulation.git
+<br>
 > cd multi-agent-simulation
+<br>
 For installing dependencies:
+<br>
 > pip3 install -r requirements.txt
+<br>
 For running the code:
+<br>
 > pade start-runtime --port 20000 driver.py
