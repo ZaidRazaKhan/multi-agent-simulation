@@ -1,4 +1,4 @@
-aiohttp==3.5.4
+aiohttp==3.7.4
 aiohttp-jinja2==1.2.0
 aioopenssl==0.5.1
 aiosasl==0.4.1
